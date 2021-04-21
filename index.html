@@ -1,0 +1,93 @@
+                                                                                                                    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New God Time</title>
+    <!-- Enlazar hoja de estilos-->
+    <link rel="stylesheet" href="Recursos/Estilos/EstiloInicio.css">
+    <!-- Enlazar API GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"><!--Letra contendor superior-->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet"><!--Letra barra navegacion-->
+    <link rel="icon" type="image/png" href="Recursos/Imagenes/Icono.png" /> <!--Icono pagina-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.css"> <!--Estilos GliderJs 1.7.3-->
+    <script defer src="Recursos/JS/main.js"></script> <!-- Script propio de la pagina-->
+
+</head>
+<body>
+    <header>
+        <div id="ContenedorLogo">
+            <!--Logo Inicio / Texto en caso de no cargar logotipo-->
+            <a href="#LogoInicio"><img src="Recursos/Imagenes/NGT.png" alt="Error al cargar logotipo" id="LogoInicio"></a>
+        </div>
+        <div id="ContenedorTexto">
+            <hgroup>
+                <h1 id="Titulo">Me alegraré en las batallas, porque conmigo ahi estarás</h1>
+                <h2 id="Autor">-Twice Musica</h1>
+            </hgroup>
+        </div>
+    </header>
+    <!-- Barra de navegacion -->
+    <nav>
+        <a href="#NewGodTime" class="logo">NewGodTime</a>
+        <ul>
+            <li><a href="#Pestaña1">Pestaña1</a></li>
+            <li><a href="#Pestaña2">Pestaña2</a></li>
+            <li><a href="#Pestaña3">Pestaña3</a></li>
+            <li><a href="#Pestaña4">Pestaña4</a></li>
+        </ul>
+    </nav>
+
+    <!-- Inicio Carrousel -->
+    <div class="carousel__contenedor">
+
+        <!-- Boton izquierdo -->
+        <button aria-label="Anterior" class="carousel__anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="carousel__lista">
+            <div class="carousel__elemento">
+                <img src="Recursos/Imagenes/Img1.jpg" alt="Imagen1">
+            </div>
+            <div class="carousel__elemento">
+                <img src="Recursos/Imagenes/Img2.jpg" alt="Imagen1">
+            </div>
+            <div class="carousel__elemento">
+                <img src="Recursos/Imagenes/Img3.jpg" alt="Imagen1">
+            </div>
+            <div class="carousel__elemento">
+                <img src="Recursos/Imagenes/Img4.jpg" alt="Imagen1">
+            </div>
+            <div class="carousel__elemento">
+                <img src="Recursos/Imagenes/Img5.jpg" alt="Imagen1">
+            </div>
+            <div class="carousel__elemento">
+                <img src="Recursos/Imagenes/Img6.jpg" alt="Imagen1">
+            </div>
+            <div class="carousel__elemento">
+                <img src="Recursos/Imagenes/Img7.jpg" alt="Imagen1">
+            </div>
+            <div class="carousel__elemento">
+                <img src="Recursos/Imagenes/Img8.jpg" alt="Imagen1">
+            </div>
+        </div>
+        <!-- Boton derecho -->
+        <button aria-label="Siguiente" class="carousel__siguiente">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div role="tablist" class="carousel__indicadores"></div> <!--Contenedor indicadores-->
+
+    </div>
+
+    <div class="contenedorDescripcion">
+        <h1>¡Bienvenido!</h1>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script><!-- Libreria GliderJs 1.7.3 -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script><!-- Libreria FontAwesomes-->
+</body>
+</html>

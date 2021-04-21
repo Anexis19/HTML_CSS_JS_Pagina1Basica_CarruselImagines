@@ -1,0 +1,170 @@
+/* LOGO INICIO */
+#LogoInicio {
+    /* Ancho y Alto */
+    width: 170px;
+    height: 180px;
+    margin-left: 17px;
+}
+/* CONTENEDOR LOGO */
+#ContenedorLogo{
+    /* Ancho y Alto */
+    width: 280px;
+    height: 180px;
+}
+/* AUTOR */
+#Autor{
+    text-align: right;
+    margin-right: 180px;
+}
+/* CONTENEDOR TEXTO */
+#ContenedorTexto{
+    /* Fuente */
+    font-family: 'Titillium Web', sans-serif;
+    color: #E39717;
+    text-shadow: 2px 0 0, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    height: 181px;
+    width: 100%;
+    padding-left: 120px;
+    /* Dado que la carpeta de Imagenes está un directorio arriba de la carpeta Estilos, es necesario usar ../ */
+    background-image: url(../Imagenes/Bosque.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+/* CONTENEDOR HEADER */
+header{
+    height: 180px;
+    /* Borde */
+    border: 5px solid teal;
+    /* Redondear borde*/
+    border-radius: 5px;
+    /* Alinear contenedores div */
+    display: flex;
+    background-color: white;
+}
+/* BARRA DE NAVEGACION-NAV */
+nav{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .8);
+    /*Permite el desplazamiento vertical de la barra de navegacion*/
+    position: sticky;
+    top: 0;
+    /* Asegura que el elemento se encuentra sobre los demas */
+    z-index: 600;
+}
+/* NAV-UL */
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    float: right;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 90%;
+    font-weight: bold;
+}
+/* NAV-UL-LI */
+nav ul li{
+    list-style-type: none;
+    border-right: 1px solid #bbb;
+    border-left: 1px solid white;
+}
+/* NAV-UL-LI-A */
+nav ul li a{
+    display: block;
+    color: floralwhite;
+    padding: 14px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/* FRASE_LOGO NEWGODTIME */
+nav a.fraseLogo{
+    float: left;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+    color:white;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;  /*Letras mayusculas*/
+    letter-spacing: 2px;        /*Esparcimiento letras*/
+}
+/* ACCION FRASE_LOGO NEWGODTIME */
+nav a.fraseLogo:hover{
+    color: teal;
+}
+/* ACCION LI */
+li a:hover {
+    background-color: teal;
+}
+/* BODY */
+body{
+    background-color:#797979;
+}
+/*======================================
+ CARRUSEL DE IMAGENES
+========================================*/
+/* CONTENEDOR-CARRULES */
+.contenedorCarousel{
+    margin-top: 10px;
+    padding: 0;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* IMAGENES-CARRUSEL */
+.glide__slide img{
+    height: 280px;
+    width: 312px;
+    border-radius: 5px;
+}
+/* BOTONES ANTERIOR-SIGUIENTE */
+.carousel_anterior,
+.carousel_siguiente{
+    margin-top: 16px;
+    background: rgba(0, 128, 128, 0.8);
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 280px;
+    border: none;
+    top: 0%;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    opacity: 40%;
+    z-index: 500;
+}
+/* ACCIONES BOTONES ANTERIOR-SIGUIENTE */
+.carousel_anterior:hover,
+.carousel_siguiente:hover{
+    opacity: 100%;
+}
+/* UBICACION BOTON ANTERIOR */
+.carousel_anterior{
+    left: 0px;
+}
+/* UBICACION BOTON SIGUIENTE */
+.carousel_siguiente{
+    right: 0px;
+}
+/* ACCION SLIDER */
+.glide__slide{
+    filter: blur(6px);
+    opacity: .7;
+    transition: .3s linear;
+}
+/* ACCION SLIDER ACTIVO  */
+.glide__slide--active{
+    opacity: 1;
+    filter: none;
+    transform: scale(1,1);
+}
+ /* VISION SLIDER */
+.glide__slide{
+    overflow: visible;
+}

@@ -1,0 +1,158 @@
+#LogoInicio {
+    /* Ancho y Alto */
+    width: 170px;
+    height: 180px;
+    margin-left: 17px;
+}
+#ContenedorLogo{
+    /* Ancho y Alto */
+    width: 280px;
+    height: 180px;
+}
+#Autor{
+    text-align: right;
+    margin-right: 180px;
+}
+#ContenedorTexto{
+    /* Fuente */
+    font-family: 'Titillium Web', sans-serif;
+    color: #E39717;
+    text-shadow: 2px 0 0, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    height: 181px;
+    width: 100%;
+    padding-left: 120px;
+    /* Dado que la carpeta de Imagenes está un directorio arriba de la carpeta Estilos, es necesario usar ../ */
+    background-image: url(../Imagenes/Bosque.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+header{
+    height: 180px;
+    /* Borde */
+    border: 5px solid teal;
+    /* Redondear borde*/
+    border-radius: 5px;
+    /* Alinear contenedores div */
+    display: flex;
+    background-color: white;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .8);
+    /*Permite el desplazamiento vertical de la barra de navegacion*/
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    float: right;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 90%;
+    font-weight: bold;
+}
+nav ul li{
+    list-style-type: none;
+    border-right: 1px solid #bbb;
+    border-left: 1px solid white;
+}
+nav ul li a{
+    display: block;
+    color: floralwhite;
+    padding: 14px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav a.logo{
+    float: left;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+
+    color:white;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;  /*Letras mayusculas*/
+    letter-spacing: 2px;        /*Esparcimiento letras*/
+}
+nav a.logo:hover{
+    color: teal;
+}
+li a:hover {
+    background-color: teal;
+}
+/* Carrules imagenes */
+body{
+    background-color:#797979;
+}
+.carousel__contenedor{
+
+    height: 280px;
+    margin-top: 5px;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.carousel__anterior,
+.carousel__siguiente{
+    background: rgba(0, 128, 128, 0.8);
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 100%;
+    border: none;
+    top: 0%;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    opacity: 40%;
+    z-index: 500;
+}
+.carousel__anterior:hover,
+.carousel__siguiente:hover{
+    opacity: 100%;
+}
+.carousel__anterior{
+    left: 0px;
+}
+.carousel__siguiente{
+    right: 0px;
+}
+.carousel__lista{
+    overflow: hidden;
+}
+.carousel__elemento{
+    text-align: center;
+}
+.carousel__elemento img{
+    height: 280px;
+    width: 312px;
+    border-radius: 5px;
+}
+.carousel__indicadores .glider-dot{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background:white;
+    opacity: .2;
+    border-radius: 0;
+}
+.carousel__indicadores .glider-dot:hover{
+    background: white;
+    opacity: .7;
+}
+.carousel__indicadores .glider-dot.active{
+  background: white;
+  opacity: 1;
+}
+.contenedorDescripcion{
+    background-color: aliceblue;
+    height: 800px;
+    border-radius: 5px;
+}
